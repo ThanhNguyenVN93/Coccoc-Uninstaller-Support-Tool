@@ -9,7 +9,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
     <AssemblyName>Coccoc Uninstaller Support Tool</AssemblyName>
-    <ApplicationIcon>bin\Debug\net8.0-windows\coccoc.ico</ApplicationIcon>
+    <ApplicationIcon>coccoc.ico</ApplicationIcon>
     <PackageReleaseNotes>Helping users uninstall Cốc Cốc more easily and permanently.</PackageReleaseNotes>
     <Description>Helping users uninstall Cốc Cốc more easily and permanently.</Description>
 
@@ -23,7 +23,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bin\Debug\net8.0-windows\coccoc.ico" />
+    <Content Include="coccoc.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
